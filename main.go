@@ -1,6 +1,7 @@
 package main
 
 import (
+	"crud-api/interfaces"
 	"crud-api/tasks"
 	"fmt"
 )
@@ -28,5 +29,11 @@ func main() {
 	store.AddProduct("Meat", 1000)
 	fmt.Println("Total price products:", store.TotalPrice())
 	fmt.Println(store.FindByName("Apple"))
+
+	r := interfaces.Rectangle{Width: 5, Height: 3}
+	c := interfaces.Circle{Radius: 2}
+
+	interfaces.Describe(r)
+	interfaces.Describe(c)
 
 }
