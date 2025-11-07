@@ -10,17 +10,17 @@
 .
 ├─ cmd/
 │  └─ api/
-│     └─ main.go          # Точка входа
+│     └─ main.go         
 ├─ internal/
 │  ├─ user/
-│  │  ├─ model.go         # Модель пользователя
-│  │  ├─ repo.go          # Хранилище (in-memory / postgres позже)
-│  │  ├─ service.go       # Бизнес-логика
-│  │  └─ transport_http.go# Handlers Gin
+│  │  ├─ model.go        
+│  │  ├─ repo.go         
+│  │  ├─ service.go     
+│  │  └─ transport_http.go
 │  └─ middleware/
-│     └─ errors.go        # Глобальная обработка ошибок
+│     └─ errors.go        
 ├─ pkg/
-│  └─ respond/            # Утилиты ответа (OK, Error)
+│  └─ respond/           
 └─ REST_API.md
 ```
 <br>
